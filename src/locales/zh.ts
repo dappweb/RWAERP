@@ -150,6 +150,33 @@ export const zh = {
         { title: '安全与信任', desc: '每一份仓单都与链上 NFT 1:1 锚定，物流数据、审计报告实时上链，不可篡改。' },
       ],
     },
+    architecture: {
+      title: '系统架构图',
+      subtitle: '从底层区块链到上层应用的全栈解决方案',
+      layers: [
+        { title: '用户层 (User Layer)', items: ['Web 端资产看板', '移动端钱包 APP', '机构交易终端', '监管审计入口'] },
+        { title: '业务层 (Business Layer)', items: ['资产代币化引擎', '订单簿/AMM 撮合', 'OTC 场外交易', '质押借贷模块'] },
+        { title: '合约层 (Contract Layer)', items: ['ERC-3643 合规标准', '多签金库', '分红/回购合约', '预言机 (Chainlink) 数据'] },
+        { title: '基础设施层 (Infra Layer)', items: ['Ethereum/Polygon/L2', 'IPFS 去中心化存储', '跨链桥', 'HSM 硬件安全模块'] },
+      ],
+    },
+    solutions: {
+      title: '适用场景解决方案',
+      items: [
+        { title: '大宗商品', desc: '玉米、大豆、金属等标准品。通过仓单融资解决供应链资金周转难题。' },
+        { title: '高价值消费品', desc: '名酒、茶叶、奢侈品。利用 NFT 溯源防伪，同时开启二级市场交易。' },
+        { title: '房地产信托', desc: '商业地产碎片化。将整栋大楼收益权拆分为 Token，降低投资门槛。' },
+        { title: '新能源资产', desc: '光伏电站、碳信用额度。将未来收益打包上市，提前回笼建设资金。' },
+      ],
+    },
+    faq: {
+      title: '常见问题 (FAQ)',
+      items: [
+        { q: '如何保证仓单与实物的一致性？', a: '我们采用物联网 (IoT) 传感器实时监控仓库状态，结合第三方权威审计机构（如四大）定期盘点，并将所有数据哈希上链，确保不可篡改。' },
+        { q: '投资者如何受到法律保护？', a: '系统基于香港/新加坡现有法律框架（如信托法），代币持有者即为信托受益人，拥有对底层资产的合法索偿权。' },
+        { q: '可以对接哪些区块链网络？', a: '支持所有 EVM 兼容链（Ethereum, Polygon, BSC, Avalanche 等），并可通过 LayerZero 进行跨链资产互操作。' },
+      ],
+    },
     workflow: {
       title: '运营流程',
       steps: [

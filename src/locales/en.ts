@@ -150,6 +150,33 @@ export const en = {
         { title: 'Security & Trust', desc: '1:1 peg between receipt and on-chain NFT. Logistics and audit data are immutable on-chain.' },
       ],
     },
+    architecture: {
+      title: 'System Architecture',
+      subtitle: 'Full-stack solution from blockchain layer to user application',
+      layers: [
+        { title: 'User Layer', items: ['Web Dashboard', 'Mobile Wallet App', 'Institutional Terminal', 'Regulatory Portal'] },
+        { title: 'Business Layer', items: ['Tokenization Engine', 'OrderBook/AMM Matching', 'OTC Trading', 'Lending Module'] },
+        { title: 'Contract Layer', items: ['ERC-3643 Standard', 'Multi-sig Treasury', 'Dividend/Buyback', 'Chainlink Oracles'] },
+        { title: 'Infra Layer', items: ['Ethereum/Polygon/L2', 'IPFS Storage', 'Cross-chain Bridge', 'HSM Security'] },
+      ],
+    },
+    solutions: {
+      title: 'Use Case Solutions',
+      items: [
+        { title: 'Commodities', desc: 'Corn, Soybeans, Metals. Solve supply chain cash flow issues via receipt financing.' },
+        { title: 'High-Value Goods', desc: 'Fine Wine, Tea, Luxury. NFT for provenance and anti-counterfeiting, enabling secondary trading.' },
+        { title: 'Real Estate (REITs)', desc: 'Commercial property fractionalization. Split building revenue rights into tokens, lowering entry barriers.' },
+        { title: 'Green Energy', desc: 'Solar farms, Carbon credits. Package future yields for listing to recoup construction capital early.' },
+      ],
+    },
+    faq: {
+      title: 'FAQ',
+      items: [
+        { q: 'How to ensure physical asset consistency?', a: 'We use IoT sensors for real-time monitoring combined with regular audits by top firms (e.g., Big 4). All data is hashed on-chain.' },
+        { q: 'How are investors legally protected?', a: 'Based on HK/SG frameworks (e.g., Trust Law), token holders are trust beneficiaries with legal claims to underlying assets.' },
+        { q: 'Which blockchains are supported?', a: 'All EVM-compatible chains (Ethereum, Polygon, BSC, Avalanche, etc.) and cross-chain via LayerZero.' },
+      ],
+    },
     workflow: {
       title: 'Operational Workflow',
       steps: [
