@@ -1,5 +1,6 @@
 export const en = {
   nav: {
+    warehouse: 'Warehouse Business',
     solutions: 'Solutions',
     features: 'Core Features',
     engine: 'Trading Engine',
@@ -130,5 +131,47 @@ export const en = {
     },
     rights: '© 2024 RWAERP.com All rights reserved.',
     links: ['Privacy Policy', 'Terms of Service'],
+  },
+  warehousePage: {
+    title: 'Warehouse Receipt Business Model',
+    subtitle: 'From physical warehousing to on-chain receipts and global circulation.',
+    revenue: [
+      { title: 'Issuance Fee', desc: 'Charge per receipt minting and onboarding.' },
+      { title: 'Storage & Management', desc: 'Recurring warehousing and audit service fees.' },
+      { title: 'Trading Commission', desc: 'Commission from secondary market transactions.' },
+    ],
+    advantages: {
+      title: 'Core Advantages',
+      items: [
+        { title: 'Instant Financing', desc: 'Receipts are assets. Skip tedious bank approvals. Pledge for instant financing, improving turnover by 10x.' },
+        { title: 'Global Liquidity', desc: 'Break geographic barriers. Connect directly to the trillion-dollar global crypto capital market.' },
+        { title: 'Fair Price Discovery', desc: 'Real-time market pricing for non-standard assets like real estate and commodities via secondary trading.' },
+        { title: 'Unlock Idle Assets', desc: 'Generate yield (lending, farming) even during storage. Maximize asset utilization efficiency.' },
+        { title: 'Security & Trust', desc: '1:1 peg between receipt and on-chain NFT. Logistics and audit data are immutable on-chain.' },
+      ],
+    },
+    workflow: {
+      title: 'Operational Workflow',
+      steps: [
+        'Asset enters warehouse and is verified',
+        'Issue warehouse receipt and bind to on-chain token',
+        'Compliance review and whitelist investors',
+        'Secondary market trading and settlement',
+        'Token destruction and physical redemption',
+      ],
+    },
+    compliance: {
+      title: 'Compliance & Risk Control',
+      items: ['KYC/AML', 'Chain audit logs', 'Custody segregation', 'Jurisdiction mapping'],
+    },
+    roles: {
+      title: 'Participants',
+      items: ['Warehousing institution', 'Asset owner', 'Auditor', 'Investors', 'Exchange'],
+    },
+    cta: {
+      title: 'Start Your Warehouse RWA',
+      desc: 'We provide the full-stack system and compliant workflows to go live fast.',
+      btn: 'Talk to Expert',
+    },
   },
 };

@@ -21,6 +21,7 @@ export const Navbar: React.FC = () => {
   };
 
   const navLinks = [
+    { name: t.nav.warehouse, href: '/warehouse' },
     { name: t.nav.solutions, href: '#solutions' },
     { name: t.nav.features, href: '#features' },
     { name: t.nav.engine, href: '#engine' },
