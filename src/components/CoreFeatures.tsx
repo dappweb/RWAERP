@@ -31,25 +31,30 @@ export const CoreFeatures: React.FC = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {/* Large Left Card */}
-        <div className="md:col-span-2 bg-[#0e0f16] border border-white/5 rounded-2xl p-8 relative overflow-hidden group">
-           <div className="relative z-10">
-             <div className="w-10 h-10 bg-blue-900/30 text-blue-400 rounded-lg flex items-center justify-center mb-6">
-               <Warehouse size={20} />
+        {/* Large Left Card - Clickable Link to Warehouse Page */}
+        <a href="/warehouse" className="md:col-span-2 block group">
+          <div className="bg-[#0e0f16] border border-white/5 rounded-2xl p-8 relative overflow-hidden h-full hover:border-blue-500/50 transition-all cursor-pointer">
+             <div className="relative z-10">
+               <div className="w-10 h-10 bg-blue-900/30 text-blue-400 rounded-lg flex items-center justify-center mb-6">
+                 <Warehouse size={20} />
+               </div>
+               <h3 className="text-xl font-bold text-white mb-3 flex items-center gap-2">
+                  {t.core.warehouse.title}
+                  <span className="text-xs bg-blue-600 text-white px-2 py-0.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">Click to View</span>
+               </h3>
+               <p className="text-slate-400 text-sm max-w-md mb-6">
+                  {t.core.warehouse.desc}
+               </p>
+               <div className="flex flex-wrap gap-2">
+                 {t.core.warehouse.tags.map(tag => (
+                    <span key={tag} className="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-full">{tag}</span>
+                 ))}
+               </div>
              </div>
-             <h3 className="text-xl font-bold text-white mb-3">{t.core.warehouse.title}</h3>
-             <p className="text-slate-400 text-sm max-w-md mb-6">
-                {t.core.warehouse.desc}
-             </p>
-             <div className="flex flex-wrap gap-2">
-               {t.core.warehouse.tags.map(tag => (
-                  <span key={tag} className="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-full">{tag}</span>
-               ))}
-             </div>
-           </div>
-           {/* Icon Graphic */}
-           <Warehouse className="absolute bottom-[-20px] right-[-20px] w-48 h-48 text-white/5 group-hover:text-white/10 transition-colors" />
-        </div>
+             {/* Icon Graphic */}
+             <Warehouse className="absolute bottom-[-20px] right-[-20px] w-48 h-48 text-white/5 group-hover:text-white/10 transition-colors" />
+          </div>
+        </a>
 
         {/* Right Top Card */}
         <Card 
